@@ -37,7 +37,7 @@ metadata:
     app: details
     service: details
 spec:
-  clusterIP: 10.96.10.10
+  clusterIP: {{ default "10.96.10" .Values.ipPrefix }}.10
   ports:
   - port: 9080
     targetPort: {{.Values.details.port}}
@@ -100,7 +100,7 @@ metadata:
     app: ratings
     service: ratings
 spec:
-  clusterIP: 10.96.10.20
+  clusterIP: {{ default "10.96.10" .Values.ipPrefix }}.20
   ports:
   - port: 9080
     targetPort: {{.Values.ratings.port}}
@@ -166,7 +166,7 @@ metadata:
     app: reviews
     service: reviews
 spec:
-  clusterIP: 10.96.10.30
+  clusterIP: {{ default "10.96.10" .Values.ipPrefix }}.30
   ports:
   - port: 9080
     targetPort: {{.Values.reviews.port}}
@@ -241,7 +241,7 @@ metadata:
     app: productpage
     service: productpage
 spec:
-  clusterIP: 10.96.10.40
+  clusterIP: {{ default "10.96.10" .Values.ipPrefix }}.40
   ports:
   - port: 9080
     targetPort: {{.Values.productpage.port}}

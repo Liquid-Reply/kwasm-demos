@@ -1,0 +1,33 @@
+ipPrefix: "10.143.9"
+
+details:
+  runtimeClassName: wasmtime-spin
+  image:
+    name: ghcr.io/liquid-reply/bookinfo/details
+    tag: pr-16
+    pullSecret: ghcr
+  port: 80
+
+ratings:
+  runtimeClassName: wasmtime-spin
+  image:
+    name: ghcr.io/liquid-reply/bookinfo/ratings
+    tag: pr-16
+    pullSecret: ghcr
+  port: 80
+
+reviews:
+  runtimeClassName: wasmtime-spin
+  image:
+    name: ghcr.io/liquid-reply/bookinfo/reviews
+    tag: pr-16
+    pullSecret: ghcr
+  port: 80
+
+productpage:
+  runtimeClassName: wasmtime-spin
+  image:
+    name: ghcr.io/liquid-reply/bookinfo/product-page
+    tag: pr-16
+    pullSecret: ghcr
+  port: 80
