@@ -15,7 +15,7 @@ route = "/..."
 command = "cargo build --target wasm32-wasi --release"
 [component.environment]
 SERVICES_DOMAIN = ""
-RATINGS_HOSTNAME = "10.96.10.20"
+RATINGS_HOSTNAME = "ratings"
 RATINGS_SERVICE_PORT = "9080"
 ENABLE_RATINGS = "true"
 STAR_COLOR = "red"
